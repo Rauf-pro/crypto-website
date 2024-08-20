@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import NavMobile from "./components/NavMobile";
 import Stats from "./components/Stats";
 import Why from "./components/Why";
+import Calculate from "./components/Calculate";
 
 // import aos
 import Aos from "aos";
@@ -25,11 +26,16 @@ const App = () => {
       <Header setNavMobile={setNavMobile} />
       <Hero />
       {/* mobile nav */}
-      <div className={`${navMobile ? 'right-0' : '-right-full'} fixed z-10 top-0 h-full transition-all duration-200`}>
-        <NavMobile setNavMobile = {setNavMobile} />
+      <div
+        className={`${
+          navMobile ? "right-0" : "-right-full"
+        } fixed z-10 top-0 h-full transition-all duration-200`}
+      >
+        <NavMobile setNavMobile={setNavMobile} />
       </div>
-      <Stats/>
-      <Why/>
+      <Stats />
+      <Why />
+      <Calculate />
       <div className="h-[2000px]"></div>
     </div>
   );
