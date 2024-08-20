@@ -10,11 +10,15 @@ const Hero = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div>
+        <div className="flex flex-col lg:flex-row items-center">
           {/* hero text */}
-          <div>
+          <div className="flex-1">
             {/* badge text */}
-            <div className="bg-white/10 p-1 mb-6 rounded-full pl-1 pr-3 max-w-[365px]">
+            <div
+              className="bg-white/10 p-1 mb-6 rounded-full pl-1 pr-3 max-w-[365px]"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
               <div className="flex items-center justify-between text-sm lg:text-base">
                 <div className="bg-white text-darkblue rounded-full font-medium py-1 px-4">
                   75% SAVE
@@ -31,12 +35,15 @@ const Hero = () => {
               Buy and sell cryptocurrencies, trusted by 10M wallets with over
               $30 billion in transactions.
             </p>
-            <button className="btn gap-x-6 pl-6 text-sm lg:-h-16 lg:text-base">Try for free 
-             <IoIosArrowDroprightCircle className="text-2xl lg:text-3xl"/>
+            <button className="btn gap-x-6 pl-6 text-sm lg:-h-16 lg:text-base">
+              Try for free
+              <IoIosArrowDroprightCircle className="text-2xl lg:text-3xl" />
             </button>
           </div>
           {/* hero image */}
-          <div>Iamge</div>
+          <div className="flex-1">
+            <img src={Image} alt="" />
+          </div>
         </div>
       </div>
     </section>
