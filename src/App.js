@@ -9,6 +9,7 @@ import Why from "./components/Why";
 import Calculate from "./components/Calculate";
 import Trade from "./components/Trade";
 import Features from "./components/Features";
+import Newsletter from "./components/Newsletter";
 
 // import aos
 import Aos from "aos";
@@ -40,7 +41,8 @@ const App = () => {
       <Calculate />
       <Trade/>
       <Features/>
-      <div className="h-[2000px]"></div>
+      <Newsletter/>
+      <div className="h-[500px]"></div>
     </div>
   );
 };
