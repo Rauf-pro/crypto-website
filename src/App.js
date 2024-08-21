@@ -44,7 +44,6 @@ const App = () => {
       <Features />
       <Newsletter />
       <Footer />
-      <div className="h-[500px]"></div>
     </div>
   );
 };
