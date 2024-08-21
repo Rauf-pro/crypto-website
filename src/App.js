@@ -10,6 +10,7 @@ import Calculate from "./components/Calculate";
 import Trade from "./components/Trade";
 import Features from "./components/Features";
 import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 // import aos
 import Aos from "aos";
@@ -39,9 +40,10 @@ const App = () => {
       <Stats />
       <Why />
       <Calculate />
-      <Trade/>
-      <Features/>
-      <Newsletter/>
+      <Trade />
+      <Features />
+      <Newsletter />
+      <Footer />
       <div className="h-[500px]"></div>
     </div>
   );
